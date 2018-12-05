@@ -3,7 +3,12 @@ package com.vernyhora.laba01.analyzer;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * @link  AbstractSorter
+ * @author <Vernyhora Elena>
+ */
 public class ArraySorterData {
+
     private Class arraySorter;
     private Map<Integer, Long> results;
 

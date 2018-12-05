@@ -6,20 +6,30 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @see HashMap
+ *
+ * @author <Vernyhora Elena></>
+ */
 public class ExcelDataMapper {
-    private Map<Method, ExcelDataModel> result;
 
+    private Map<Method, ExcelDataModel> result;
     public ExcelDataMapper() {
         result = new HashMap<>();
     }
-
     public List<ExcelDataModel> getResults() {
         return new ArrayList<>(result.values());
     }
-
+    /**
+     * {@link ArraySorterData} and {@link ExcelDataModel }
+     * @param analyzeResult
+     * @param elements
+     */
     public void collectResults(Map<Class, Map<Method, Long>> analyzeResult, int elements) {
         for (Map.Entry<Class, Map<Method, Long>> entry : analyzeResult.entrySet()) {
-            for (Map.Entry<Method, Long> methodLongEntry : entry.getValue().entrySet()){
+
+            for (Map.Entry<Method, Long> methodLongEntry : entry.getValue().entrySet()) {
+
                 result.putIfAbsent(methodLongEntry.getKey(), new ExcelDataModel(methodLongEntry.getKey()));
                 ExcelDataModel excelDataModel = result.get(methodLongEntry.getKey());
 

@@ -4,6 +4,13 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class with method and Map with the results of this method
+ * @see Map
+ * @see com.vernyhora.laba01.fillers.ArrayGenerator
+ *
+ * @author <Vernyhora elena>
+ */
 public class ExcelDataModel {
 
     private Method method;

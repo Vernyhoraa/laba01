@@ -1,6 +1,6 @@
 package com.vernyhora.laba01.runner;
 
-import com.vernyhora.laba01.CreateExcelDemo;
+import com.vernyhora.laba01.Excel.CreateExcelDemo;
 import com.vernyhora.laba01.analyzer.Analyzer;
 import com.vernyhora.laba01.analyzer.ExcelDataMapper;
 
