@@ -32,9 +32,8 @@ public class Analyzer {
      */
     public Analyzer() throws InstantiationException, IllegalAccessException {
         this.arraysSorts = findAbstract.findAbstract();
-        this.methodList = fillerProcesorService.findMetods();
+        this.methodList = fillerProcesorService.findMethods();
     }
-
     public Map<Class, Map<Method, Long>> analyze(int length) throws InvocationTargetException, IllegalAccessException {
         Map<Class, Map<Method, Long>> analyzerMap = new HashMap<>();
 

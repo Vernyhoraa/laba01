@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ExcelDataModel {
+
     private Method method;
     private Map<Class, ArraySorterData> dataMap;
 

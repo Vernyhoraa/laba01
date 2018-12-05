@@ -24,7 +24,7 @@ public class FillerProcesorService {
      * in the class {@link ArrayGenerator}
      * @return list of methods
      */
-    public List<Method> findMetods() {
+    public List<Method> findMethods() {
         List<Method> methods = new ArrayList<>();
         Class neededClass = ArrayGenerator.class;
 
